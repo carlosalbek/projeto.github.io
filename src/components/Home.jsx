@@ -7,7 +7,11 @@ function Home() {
        <div className="home-container">
         <h1>Olá, eu sou o Carlos Alberto</h1>
         <p>Lordbola</p>
-        
+        <br />
+        <div >
+            <button className="button-css">SESI</button> 
+            <button className="button-css" >SENAI</button>
+        </div>
         
        </div>
     )

@@ -6,7 +6,7 @@ function Home() {
     return(
        <div className="home-container">
         <h1>Olá, eu sou o Carlos Alberto</h1>
-        <h4>Desenvolvedor mirim de back e front</h4>
+        <p>Lordbola</p>
         
         
        </div>

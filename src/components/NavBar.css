@@ -1,12 +1,13 @@
 .navbar-container{
     display: flex;
-    gap: 24px;
+    gap: 32px;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    background-color: rgba(18,18,20,0.8);
-    backdrop-filter: blur(8px); /*Efeito de vidro Fosco*/
-    border-bottom: 1px solid rgba(255, 255, 255, 0,05);
+    background-color: rgba(7,15,11,0.75);
+    backdrop-filter: blur(12px); /*Efeito de vidro Fosco*/
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(52, 211, 153, 0,3);
     width: 100%;
     position: fixed;
     top: 0;
@@ -16,7 +17,7 @@
 .nav-link{
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.92 rem;
     font-weight: 500;
     color: #9494a0;
     position: relative;
@@ -24,7 +25,8 @@
     transition: color 0.3s ease
 }
 .nav-link:hover{
-    color: #fff;
+    color: #1eff00;
+    text-shadow: 0 0 10px rgba(52, 211, 153, 0,3);
 }
 .nav-link::after{
     content: '';
@@ -32,11 +34,11 @@
     bottom: 0;
     left: 0;
     width: 100px;
-    height: 2px;
-    background-color: #fff;
-    transform: scale(0) ;
+    height: 1.5px;
+    background-color: #10b981;
+    transform: scaleX(0) ;
     transform-origin: right;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover::after{
@@ -44,10 +46,10 @@
     transform-origin: left;
 }
 .btn-back{
-    color: #ff0000 !important;
-    font-weight: bold;
-    margin-right: 10px;
+    color: #f43f5e !important;
+    font-weight: 600;
+    margin-right: 16px;
 }
 .btn-back::after{
-    background-color: #ff0000;
+    background-color: #f43f5e;
 }

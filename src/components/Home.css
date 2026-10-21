@@ -53,14 +53,21 @@
     align-items: flex-start;        
     border-top: 4px solid transparent;
     color: #000000;
+    transition: ease 0.2s;
    
     p{
          font-family: "Newsreader", serif;
-    }    
+    }
+    
+}
+.portfolio-card:hover{
+    transform: scale(1.02);
 }
 
 .card-sesi{
-    border-top-color: #b91c1c;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(90deg, rgba(6, 17, 99, 1) 8%, rgba(42, 0, 115, 1) 34%, rgba(227, 26, 0, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
 }
 .card-senai{
     border-top-color: #0e7490;

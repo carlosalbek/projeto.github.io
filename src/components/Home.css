@@ -1,51 +1,114 @@
-.home-container{
-    padding-top: 110px; 
-    padding-bottom: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 
-    display:flex;
+
+.home-container{
+    padding: 60px 10%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
     box-sizing: border-box;
-    margin-top: auto;
-}
-.home-container h1{
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 10px;
-    line-height: 1.1;
+    background-color: #f8fafc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.home-container p{
-    font-size: 1.3rem;
-    color: #fff;
-    font-weight: 400;
-    margin-top: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.button-css{
-    align-items: center;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.1;
-    margin: 0 30px;
-    min-width: 120px;
-
-    font-size: 0.95rem;
-    font-weight: 600;
+.top-inicio{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b !important;
+    padding: 6px 12px;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-bottom: 20px;
     letter-spacing: 0.5px;
-    line-height: 1.1;
-
-    outline: none;
-    border: none;
-
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
 }
-.button-css:hover{
-    background-color: rgb(99, 255, 133);
-    transform: translate(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+.home-container .titulo{
+    font-size: 3rem;
+    color: #0f172a !important;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    font-weight: 800;
+}
+.home-container .descricao{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000000 !important;
+    line-height: 1.6;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.cards-wrapper {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+.portfolio-card{
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;        
+    border-top: 4px solid transparent;
+    color: #000000;
+   
+    p{
+         font-family: "Newsreader", serif;
+    }    
+}
+
+.card-sesi{
+    border-top-color: #b91c1c;
+}
+.card-senai{
+    border-top-color: #0e7490;
+    
+}
+.card-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+}
+.icon-sesi{
+    background-color: #fef2f2;
+    color: #b91c1c;
+}
+.icon-senai{
+    background-color: #ecfeff;
+    color: #0e7490;
+}
+.portfolio-card h3{
+    font-size: 1.4rem;
+    color: #0f172a !important;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+}
+.portfolio-card p{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: opacity 0.2s;
+    margin-top: auto;
+    padding: 2px 0;
+}
+.portfolio-card h3{
+    color: #000000;
+}
+.card-link-sesi{
+    color: #2563eb !important;
+}
+.card-link-senai{
+    color: #2563eb !important;
+}
+.card-link:hover{
+    text-decoration: underline;
+    opacity: 0.8;
 }
